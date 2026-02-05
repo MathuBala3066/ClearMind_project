@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearMind – Overthinking Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌿 ClearMind</h1>
+        <p>Let’s slow down and think clearly</p>
+        <button id="darkModeBtn">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <div class="card" id="app">
+            <h2>What’s worrying you right now?</h2>
+            <textarea id="worryInput" placeholder="Type your worry here..."></textarea>
+            <button onclick="startFlow()">Help Me Think Clearly</button>
+        </div>
+
+        <div class="history">
+            <h3>🕒 Previous Thoughts</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
