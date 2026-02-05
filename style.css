@@ -1,0 +1,135 @@
+/* ===== General Styles ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e6f7f2, #fdf6ec); /* soft mint + warm cream */
+    margin: 0;
+    text-align: center;
+    color: #2f3e46;
+    transition: background 0.5s, color 0.5s;
+}
+
+header {
+    padding: 25px 15px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+    color: #344e41;
+}
+
+header p {
+    margin: 8px 0 15px;
+    font-size: 15px;
+    color: #5f6f73;
+}
+
+/* ===== Buttons ===== */
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 12px;
+    background: #84a98c;   /* calm sage green */
+    color: white;
+    cursor: pointer;
+    margin: 6px 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #6b9080;
+    transform: translateY(-2px);
+}
+
+/* ===== Inputs ===== */
+textarea, input[type="text"] {
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccd5ae;
+    background: #f8f9fa;
+    font-size: 14px;
+    resize: none;
+}
+
+/* ===== Card ===== */
+.card {
+    background: #ffffff;
+    width: 92%;
+    max-width: 520px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.card.fade-out {
+    opacity: 0;
+    transform: scale(0.98);
+}
+
+/* ===== History Section ===== */
+.history {
+    width: 92%;
+    max-width: 520px;
+    margin: 10px auto 40px;
+    text-align: left;
+    background: rgba(255,255,255,0.6);
+    padding: 15px 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+}
+
+.history h3 {
+    margin-top: 0;
+    color: #344e41;
+}
+
+.history ul {
+    list-style: "🌱 ";
+    padding-left: 10px;
+    line-height: 1.6;
+}
+
+/* ===== Dark Mode (Soft Night Theme) ===== */
+body.dark-mode {
+    background: linear-gradient(135deg, #1b263b, #0d1b2a);
+    color: #e0e1dd;
+}
+
+body.dark-mode .card {
+    background: #243447;
+    color: #f1faee;
+}
+
+body.dark-mode textarea,
+body.dark-mode input[type="text"] {
+    background: #334756;
+    color: white;
+    border: 1px solid #4f6d7a;
+}
+
+body.dark-mode .history {
+    background: rgba(36,52,71,0.7);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .card {
+        padding: 18px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    textarea, input[type="text"] {
+        font-size: 16px;
+    }
+}
